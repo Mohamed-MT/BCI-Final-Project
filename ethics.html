@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>BCI — Critical Discussion</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .right-fixed {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+  </style>
 </head>
+
 <body>
   <nav class="topbar">
     <div class="nav-inner container">
@@ -20,61 +28,48 @@
   </nav>
 
   <main class="container">
-    <!-- Card 1: Social implications (left) | Image (right) -->
     <section class="section">
       <div class="grid-2">
-        <div class="card">
-          <h3>Social implications</h3>
-          <ul>
-            <li>BCIs change how people interact with technology and each other, offering independence and improved communication for some users.</li>
-            <li>They also raise questions about who controls neural data and how that data might be used, including concerns about surveillance or commercial exploitation.</li>
-          </ul>
+
+        <!-- LEFT SIDE -->
+        <div>
+
+          <div class="card">
+            <h3>Social implications</h3>
+            <ul>
+              <li>BCIs offer increased independence and communication abilities for individuals with disabilities.</li>
+              <li>They raise concerns about who controls neural data and how this information may be used or misused.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:18px;">
+            <h3>Risks and accountability</h3>
+            <ul>
+              <li>Invasive BCIs involve surgical risks, device failures, emotional strain, and potential unintended outputs.</li>
+              <li>These issues create uncertainty about whether responsibility lies with users, clinicians, or developers.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:18px;">
+            <h3>Ethical lenses</h3>
+            <ul>
+              <li><strong>Utilitarian perspective:</strong> BCIs are ethical if the benefits—such as restored communication and improved quality of life—outweigh potential harms.</li>
+              <li><strong>Deontological perspective:</strong> Emphasizes autonomy, informed consent, and strict protections for neural data regardless of overall societal benefit.</li>
+            </ul>
+          </div>
+
         </div>
 
-        <div class="art">
-          <img src="bci-ethics.jpg" alt="Ethics illustration" style="width:100%; height:auto; border-radius:10px;">
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="right-fixed">
+          <img src="bci-ethics.jpg" alt="BCI ethics"
+               style="width:100%; height:auto; border-radius:10px;">
         </div>
+
       </div>
     </section>
-
-    <!-- Card 2: Risks & accountability (left) | Image (right) -->
-    <section class="section" style="margin-top:18px;">
-      <div class="grid-2">
-        <div class="card">
-          <h3>Risks and accountability</h3>
-          <ul>
-            <li>Invasive BCIs involve surgical hazards, potential device failures, emotional stress for users, and the possibility of unintended outputs from misinterpreted neural signals.</li>
-            <li>These issues raise accountability questions about whether responsibility lies with users, clinicians, or device developers when devices behave unexpectedly.</li>
-          </ul>
-        </div>
-
-        <div class="art">
-          <img src="bci-ethics.jpg" alt="" style="width:100%; height:auto; border-radius:10px;">
-        </div>
-      </div>
-    </section>
-
-    <!-- Card 3: Ethical lenses (left) | Image (right) -->
-    <section class="section" style="margin-top:18px;">
-      <div class="grid-2">
-        <div class="card">
-          <h3>Ethical lenses</h3>
-          <ul>
-            <li><strong>Utilitarian:</strong> BCIs are ethical when benefits like restored communication and improved wellbeing outweigh harms, focusing on population-level outcomes.</li>
-            <li><strong>Deontological:</strong> Emphasizes individual rights and duties, requiring informed consent, privacy protections, and limits on coercive use regardless of aggregate benefits.</li>
-          </ul>
-        </div>
-
-        <div class="art">
-          <img src="bci-ethics.jpg" alt="" style="width:100%; height:auto; border-radius:10px;">
-        </div>
-      </div>
-    </section>
-
   </main>
 </body>
 </html>
 
-</body>
-</html>
 
