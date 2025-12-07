@@ -14,7 +14,7 @@ Provides a clear explanation of what BCIs are, how they function, and why the te
 Describes real-world use cases of BCIs, particularly in medical and commercial contexts. This section also discusses the challenges and limitations of using BCIs, supported by references.
 
 ### 3. Critical Discussion  
-Analyzes the social, political, and ethical implications of BCIs. This section applies two ethical lenses—Utilitarianism and Deontology—to evaluate the impacts and concerns surrounding the technology.
+Analyzes the social, political, and ethical implications of BCIs. This section applies two ethical lenses — Utilitarianism and Deontology to evaluate the impacts and concerns surrounding the technology.
 
 ### 4. Recommendations  
 Offers practical technical, social, and policy recommendations to reduce risks and support responsible development and use of BCI technology.
