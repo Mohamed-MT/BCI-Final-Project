@@ -50,3 +50,9 @@ nav.topbar {
   .grid-2 { grid-template-columns: 1fr; }
   .links { display:none; }
 }
+/* Card Heading Color Update */
+.card h3 {
+  color: #7aa8ff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
