@@ -1,56 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BCI Final Project — Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BCI — Introduction of Technology</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .right-fixed {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+  </style>
 </head>
+
 <body>
   <nav class="topbar">
     <div class="nav-inner container">
-      <div class="brand">BCI — Restoring Communication</div>
+      <div class="brand">Brain–Computer Interfaces</div>
       <div class="links">
-        <a class="active" href="index.html">Home</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="ethics.html">Risks & Ethics</a>
+        <a class="active" href="index.html">Introduction</a>
+        <a href="how-it-works.html">Applications</a>
+        <a href="ethics.html">Critical Discussion</a>
         <a href="recommendations.html">Recommendations</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <section class="hero">
-      <div class="left">
-        <h1>BCI to Restore Communication</h1>
-        <p>We study implanted Brain–Computer Interfaces (BCIs) used to restore communication for people with severe paralysis. These systems translate neural activity into text or synthesized speech, returning independence and enabling meaningful connection. Our focus is narrow and practical: medical BCIs for communication.</p>
-        <div class="cta-row">
-          <a class="btn" href="how-it-works.html">How it works</a>
-          <a class="btn" href="ethics.html">Risks & ethics</a>
-        </div>
-        <p class="muted" style="margin-top:12px;">Team: Mohamed Taha, Dre Miller, Tyler Thai, John Zhou</p>
-      </div>
-
-      <div class="art">
-        <img src="bci-hero.jpg" alt="Neon brain illustration" />
-      </div>
-    </section>
 
     <section class="section">
       <div class="grid-2">
-        <div class="card">
-          <div class="kicker">Project scope</div>
-          <h3 style="margin-top:8px;color:#eaf7ff;">Why we focus on communication</h3>
-          <p class="muted">Restoring the ability to communicate has immediate patient impact. It is an ethically strong use case because it addresses fundamental autonomy: decisions, preferences, and relationships depend on communication.</p>
+
+        <!-- LEFT SIDE: CARDS -->
+        <div>
+
+          <div class="card">
+            <h3>What is a Brain–Computer Interface (BCI)?</h3>
+            <ul>
+              <li>BCIs enable direct communication between the human brain and external devices by translating electrical brain signals into digital commands.</li>
+              <li>This allows users to control technologies such as computers, robotic limbs, and communication tools without physical movement.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:18px;">
+            <h3>Types and significance</h3>
+            <ul>
+              <li>BCIs can be non-invasive (external sensors) or invasive (implants), with implanted devices offering more accurate signal detection.</li>
+              <li>The technology is rapidly moving from research settings into real-world use for individuals with severe disabilities.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:18px;">
+            <h3>Promise and ethical concerns</h3>
+            <ul>
+              <li>BCIs have potential to restore communication and independence for people who cannot move or speak.</li>
+              <li>They also raise ethical concerns involving privacy, safety, autonomy, and the impact of technology that directly interfaces with neural activity.</li>
+            </ul>
+          </div>
+
+          <p class="muted" style="margin-top:14px;">Prepared by — Mohamed Taha, Dre Miller, Tyler Thai, John Zhou</p>
         </div>
 
-        <aside class="card">
-          <h4 style="margin:0;color:var(--accent-2);">Quick facts</h4>
-          <p class="muted" style="margin-top:8px;">Implant type: intracortical microelectrode arrays<br>Primary stakeholder: medical centers & clinicians<br>Ethical lenses: utilitarian & deontology</p>
-        </aside>
+        <!-- RIGHT SIDE: FIXED IMAGE -->
+        <div class="right-fixed">
+          <img src="bci-hero.jpg" alt="BCI illustration"
+               style="width:100%; height:auto; border-radius:10px;">
+        </div>
+
       </div>
     </section>
 
-    <div class="footer">Prepared for: IT-304</div>
   </main>
 </body>
 </html>
