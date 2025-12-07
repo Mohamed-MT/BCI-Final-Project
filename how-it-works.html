@@ -1,61 +1,78 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BCI — How it works</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BCI — Applications</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .right-fixed {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+  </style>
 </head>
+
 <body>
   <nav class="topbar">
     <div class="nav-inner container">
-      <div class="brand">BCI — Restoring Communication</div>
+      <div class="brand">Brain–Computer Interfaces</div>
       <div class="links">
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="ethics.html">Risks & Ethics</a>
+        <a href="index.html">Introduction</a>
+        <a class="active" href="how-it-works.html">Applications</a>
+        <a href="ethics.html">Critical Discussion</a>
         <a href="recommendations.html">Recommendations</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
+
     <section class="section">
-      <h2 style="color:#eaf7ff; margin-top:0;">How BCIs capture and translate neural activity</h2>
-
       <div class="grid-2">
+
+        <!-- LEFT: CARDS -->
         <div>
+
           <div class="card">
-            <h3>Signal acquisition</h3>
-            <p>Implanted microelectrode arrays sit on or in the cortex and detect neuron firing. These raw electrical signals are amplified and filtered. For restoring communication, implanted arrays typically provide the high fidelity needed to decode precise patterns like imagined handwriting or speech movements.</p>
+            <h3>Medical application: Restoring communication</h3>
+            <ul>
+              <li>Implanted BCIs help individuals with ALS or spinal injuries control cursors, type messages, and operate robotic limbs using neural signals.</li>
+              <li>These systems translate brain activity into commands, enabling communication and basic environmental control.</li>
+            </ul>
           </div>
 
-          <div class="card" style="margin-top:12px;">
-            <h3>Decoding & machine learning</h3>
-            <p>Machine learning models convert neural patterns into letters, words, or commands. Models are trained per patient because neural signatures vary. A confirmation step (user verifies outputs before sending) reduces the risk of accidental messages.</p>
+          <div class="card" style="margin-top:18px;">
+            <h3>Commercial development and human trials</h3>
+            <ul>
+              <li>Companies are testing implanted BCIs that allow users with paralysis to browse the internet, send texts, and interact with apps.</li>
+              <li>These trials show progress toward early consumer-facing systems rather than purely experimental prototypes.</li>
+            </ul>
           </div>
 
-          <div class="card" style="margin-top:12px;">
-            <h3>Output & feedback</h3>
-            <p>Decoded outputs become text, synthetic speech, or device control. Real-time feedback helps users refine their neural signals and increases accuracy over time.</p>
+          <div class="card" style="margin-top:18px;">
+            <h3>Complexities and challenges</h3>
+            <ul>
+              <li>Invasive BCIs require surgery and bring risks such as infection, bleeding, and long-term complications.</li>
+              <li>Neural data are extremely sensitive, raising privacy concerns because they may reveal intentions or emotions.</li>
+              <li>Scar tissue can reduce implant performance over time, affecting reliability.</li>
+              <li>Cost, access, and media-driven expectations create additional social challenges.</li>
+            </ul>
           </div>
+
         </div>
 
-        <aside class="card">
-          <h3>Illustration: system flow</h3>
-          <img src="bci-diagram.jpg" alt="BCI flow diagram">
-          <p style="color:var(--muted); margin-top:10px;">From neural signal → decoder → confirmation → text or speech output. For patients, this means regained communication via thought alone.</p>
-        </aside>
+        <!-- RIGHT: FIXED IMAGE -->
+        <div class="right-fixed">
+          <img src="bci-diagram.jpg" alt="BCI diagram"
+               style="width:100%; height:auto; border-radius:10px;">
+        </div>
+
       </div>
     </section>
 
-    <section class="section" style="margin-top:18px;">
-      <h3 style="color:#eaf7ff;">Real example</h3>
-      <div class="card">
-        <p>Clinical trials have decoded imagined handwriting or attempted speech from implanted arrays, allowing some patients to produce text at practical speeds. These experiments show the feasibility of returning meaningful communication to people with locked-in conditions.</p>
-      </div>
-    </section>
-
-    <div class="footer"><a href="index.html" style="color:var(--muted);text-decoration:none">← Back</a></div>
   </main>
 </body>
 </html>
+
