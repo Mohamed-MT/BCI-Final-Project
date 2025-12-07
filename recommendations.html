@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>BCI — Recommendations</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .right-fixed {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+  </style>
 </head>
+
 <body>
   <nav class="topbar">
     <div class="nav-inner container">
@@ -20,62 +28,48 @@
   </nav>
 
   <main class="container">
-    <!-- Card 1: Technical & data safeguards (left) | Image (right) -->
     <section class="section">
       <div class="grid-2">
-        <div class="card">
-          <h3>Technical recommendations</h3>
-          <ul>
-            <li>Improve implant durability and long-term signal reliability to reduce the need for repeated procedures.</li>
-            <li>Implement stronger safeguards for neural data storage and transmission to protect user privacy and prevent unauthorized access.</li>
-          </ul>
+
+        <!-- LEFT SIDE -->
+        <div>
+
+          <div class="card">
+            <h3>Technical recommendations</h3>
+            <ul>
+              <li>Improve implant durability and long-term reliability to reduce repeat surgical procedures.</li>
+              <li>Implement stronger protections for neural data storage and transmission.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:18px;">
+            <h3>Social recommendations</h3>
+            <ul>
+              <li>Provide realistic public education about BCI capabilities and limitations.</li>
+              <li>Offer psychological and long-term support for individuals adapting to implanted devices.</li>
+              <li>Promote equitable access to prevent widening technological inequality.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:18px;">
+            <h3>Policy recommendations</h3>
+            <ul>
+              <li>Define neural data as highly sensitive information with strong legal safeguards.</li>
+              <li>Require long-term safety monitoring and transparent reporting for device failures or side effects.</li>
+            </ul>
+          </div>
+
         </div>
 
-        <div class="art">
-          <img src="bci-clinic.jpg" alt="Clinical BCI" style="width:100%; height:auto; border-radius:10px;">
+        <!-- RIGHT FIXED IMAGE -->
+        <div class="right-fixed">
+          <img src="bci-clinic.jpg" alt="BCI clinic image"
+               style="width:100%; height:auto; border-radius:10px;">
         </div>
+
       </div>
     </section>
-
-    <!-- Card 2: Social recommendations (left) | Image (right) -->
-    <section class="section" style="margin-top:18px;">
-      <div class="grid-2">
-        <div class="card">
-          <h3>Social recommendations</h3>
-          <ul>
-            <li>Provide clear, realistic education for users and the public about BCI capabilities and limits.</li>
-            <li>Offer psychological support for individuals adapting to implanted systems and plan for long-term device maintenance.</li>
-            <li>Promote fair access measures to prevent advances from widening existing inequalities.</li>
-          </ul>
-        </div>
-
-        <div class="art">
-          <img src="bci-clinic.jpg" alt="" style="width:100%; height:auto; border-radius:10px;">
-        </div>
-      </div>
-    </section>
-
-    <!-- Card 3: Policy recommendations (left) | Image (right) -->
-    <section class="section" style="margin-top:18px;">
-      <div class="grid-2">
-        <div class="card">
-          <h3>Policy recommendations</h3>
-          <ul>
-            <li>Treat neural data as highly sensitive and establish strict legal protections around its collection and secondary use.</li>
-            <li>Require long-term safety monitoring for implanted devices and mandate transparency when companies report failures or side effects.</li>
-          </ul>
-        </div>
-
-        <div class="art">
-          <img src="bci-clinic.jpg" alt="" style="width:100%; height:auto; border-radius:10px;">
-        </div>
-      </div>
-    </section>
-
   </main>
 </body>
 </html>
 
-  </main>
-</body>
-</html>
