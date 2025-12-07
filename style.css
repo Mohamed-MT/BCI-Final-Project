@@ -50,9 +50,12 @@ nav.topbar {
   .grid-2 { grid-template-columns: 1fr; }
   .links { display:none; }
 }
-/* Card Heading Color Update */
+/* Neon Header Style for Cards */
 .card h3 {
-  color: #7aa8ff;
+  color: #7aa8ff;               /* soft neon blue */
   font-weight: 600;
   margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(122, 168, 255, 0.7);
+  letter-spacing: 0.3px;
 }
+
